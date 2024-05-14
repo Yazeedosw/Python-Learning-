@@ -1,21 +1,28 @@
-# python 101
+# ***Python 101***
 
-## To write a Markdown in python use "#" then start writing
+To write a Markdown in python use "#" then start writing
+```
 # Print "Hello everyone"
 print("Hello everyone")
------------------------------------------------------------------------
+
+```
 ## Variables
+```
 name = 'Khaled'
 age = 30
 #or in one line
 name,age = 'khaled',30
------------------------------------------------------------------------
+
+```
 
 ## Inputs and Outputs
+```
 my_name = input('could you please write your name?')
 question = input('could you please ask your question?')
 
 print('Than you',my_name, 'for asking this question we will respond to you as soon as possible to this question ',question)
+
+```
 -----------------------------------------------------------------------
 
 ## Data types and operators
@@ -47,73 +54,103 @@ print('Than you',my_name, 'for asking this question we will respond to you as so
 | OR        | Logical OR operator - True if at least one condition is True | True   |
 | NOT       | Logical NOT operator - Inverts the boolean value             | False  |
 
-*** Example of AND ***
+***Example of AND***
+```
 not_raining = True
 not_foggy = True
 is_sunny = not_raining and not_foggy
 
-*** Example of OR ***
+```
+***Example of OR***
+```
 is_raining = True
 is_foggy = False
 not_sunny = is_raining or is_foggy
 
-*** Example of NOT ***
+```
+***Example of NOT***
+```
 is_student = True
 print(not is_student)
------------------------------------------------------------------------
+
+```
+
+
 ## List
-### List - Data Type
+
+### - List - Data Type
+```
 names = ['Ahmad','khaled','Abduallah','Abeer']
-** Note **: list can take any type of data such as string ,int , float and bool
-** Note **: the elements in the List can be changed ,and consider one the data type
 print(names)
 
-### List - index : each element has index in the list , start from 0
+```
+
+**Note**: list can take any type of data such as string ,int , float and bool.
+**Note**: the elements in the List can be changed ,and consider one the data type.
+
+
+### - List - index 
+each element has index in the list , start from 0
+```
 names = ['Ahmad','khaled','Abduallah','Abeer']
 print(names[0])
 
+```
 ### List - change element from List
+```
 names = ['Ahmad','khaled','Abduallah','Abeer']
 names[0] = 'Yazeed'
 print(names)
-
+```
 ### List - add element to List
+```
 names = ['Ahmad','khaled','Abduallah','Abeer']
 names.append('Fahad')
 print(names)
-** Note **: ( append) will add the value at the end of the list
-
+```
+**Note**: ( append) will add the value at the end of the list
+```
 names = ['Ahmad','khaled','Abduallah','Abeer']
 names.insert(0,'Fahad')
 print(names)
-** Note **: (insert) will add the value based on (index, value)
+```
+**Note**: (insert) will add the value based on (index, value)
 
 ### List - remove element to List
+```
 names = ['Ahmad','khaled','Abduallah','Abeer']
 names.remove('khaled')
 print(names)
-** Note **: (remove ) will remove the value from the list
+```
+**Note**: (remove ) will remove the value from the list
+```
 names = ['Ahmad','khaled','Abduallah','Abeer']
 names.clear()
 print(names)
-** Note **: (clear) will remove all the list value
-------------------------------------------------------------------------
+```
+**Note**: (clear) will remove all the list value
+
 ## Tuples
 the values can not edit by add or remove,example:
+```
 child_one = ('ahmad','Riyadh ','1-1-2021')
-
+```
 ## Dictionary
 to store large value , example:
+```
 Child_one = {'name': 'ahmad','city':'Riyadh','Birth':'1-1-2021'}
-
+```
 ### How to use the Dictionary to find specific value
+```
 print(Child_one['name'])
-
+```
 ### How to display all the value in Dictionary
+```
 print(Child_one.values())
 #to know the keys for the Dictionary
 print(Child_one.keys())
-------------------------------------------------------------------------
+```
+
 ## Condtion
 ### If Statement
 Example:
@@ -161,7 +198,7 @@ while i <= 100:
     i+=1
 ```
 
-** Note **: repeat the  until te condition meet or continue
+**Note**: repeat the  until te condition meet or continue
 ### for
 Example:
 ```
@@ -169,7 +206,7 @@ Students = ['Ahmad','khaled','Abduallah','Abeer']
 for s in Students:
     print(s)
 ```
-** Note ** : repeat the condition for certain times , EX: (s) in each circle it will represent each value in the list
+**Note** : repeat the condition for certain times , EX: (s) in each circle it will represent each value in the list
 
 ### Range - (For Loop)
 Examples:
@@ -182,9 +219,9 @@ for n in range(10):
 for n in range(5,10):
     print(n)
 ```
-** Note **: to specify a range from where to start
+**Note**: to specify a range from where to start
 
-------------------------------------------------------------------------
+
 ## Function
 ### Function - concept
 Example:
@@ -215,7 +252,7 @@ add(1,6)
 add("welcome","Fahad")
 
 ```
-** Note ** : function can take any thing not only number
+**Note** : function can take any thing not only number
 
 ### return
 Example:
@@ -230,6 +267,4 @@ print(value)
 Total = plus(10,5) - plus(3,3)
 print(Total)
 ```
-** Note ** : you can call function in any time EX:
-
-------------------------------------------------------------------------
+**Note** : you can call function in any time EX:
